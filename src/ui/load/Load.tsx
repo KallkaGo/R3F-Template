@@ -10,7 +10,6 @@ import { useInteractStore, useLoadedStore } from "@utils/Store";
 /**
  * 加载总数
  */
-const TOTAL = 24;
 
 const Load: FC<IProps> = memo(({ emit }) => {
   const panelRef = useRef<HTMLDivElement>(null);

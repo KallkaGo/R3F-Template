@@ -9,8 +9,6 @@ const Game = () => {
   const gameRef = useRef<HTMLDivElement>(null);
   const aniDone = useRef(false);
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
   useGSAP(() => {
     gsap.set(gameRef.current, { opacity: 0 });
     gsap.to(gameRef.current, {
