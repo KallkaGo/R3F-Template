@@ -5,9 +5,4 @@ export const UIWrapper = styled.div`
     height: 100vh;
     top: 0px;
     left: 0px;
-    .clickBtn {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-    }
 `;
