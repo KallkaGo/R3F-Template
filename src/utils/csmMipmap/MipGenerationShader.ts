@@ -1,23 +1,17 @@
-import { UniformsUtils, Vector2 } from 'three';
-import { sampleFunctions } from './mipSampleFunctions.js';
+import { UniformsUtils, Vector2 } from 'three'
+import { sampleFunctions } from './mipSampleFunctions.js'
 
 export function clone(shader: any) {
-
-  const newShader = { ...shader };
+  const newShader = { ...shader }
   if ('defines' in shader) {
-
-    newShader.defines = { ...shader.defines };
-
+    newShader.defines = { ...shader.defines }
   }
 
   if ('uniforms' in shader) {
-
-    newShader.uniforms = UniformsUtils.clone(shader.uniforms);
-
+    newShader.uniforms = UniformsUtils.clone(shader.uniforms)
   }
 
-  return newShader;
-
+  return newShader
 }
 
 // Non Power of Two mip map generation
@@ -215,6 +209,6 @@ export const MipGenerationShader = {
 			<mipmap_logic>
 
 		}
-	`
+	`,
 
-};
+}
