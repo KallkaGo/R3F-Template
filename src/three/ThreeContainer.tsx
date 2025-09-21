@@ -4,7 +4,7 @@ import { Leva } from 'leva'
 import { Perf } from 'r3f-perf'
 import { Suspense } from 'react'
 import { NoToneMapping } from 'three'
-import Sketch from './components/Sketch/Sketch'
+import Sketch from './Sketch/Sketch'
 
 export default function ThreeContainer() {
   const demand = useInteractStore(state => state.demand)

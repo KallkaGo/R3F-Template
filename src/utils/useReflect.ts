@@ -1,4 +1,4 @@
-import type { Mesh } from 'three'
+import type { Mesh, Object3D } from 'three'
 import { useFBO } from '@react-three/drei'
 import { useFrame, useThree } from '@react-three/fiber'
 import { useMemo, useRef } from 'react'
@@ -8,7 +8,7 @@ import { PackedMipMapGenerator } from './csmMipmap/PackedMipMapGenerator'
 
 interface MeshReflectorMaterialConfig {
   resolution: number
-  ignoreObjects: THREE.Object3D[]
+  ignoreObjects: Object3D[]
 }
 
 function useReflect(parent: Mesh, config: Partial<MeshReflectorMaterialConfig> = {}) {
