@@ -16,8 +16,7 @@ const useInteractStore = create(() => ({
 
 const useGameStore = create(() => ({
     time: 0,
-    transfer: false,
-    bodyColor:'#26d6e9',
+    transfer: false
 }));
 
 const useLoadedStore = create(() => ({

@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { useInteractStore } from "@utils/Store";
 import { Perf } from "r3f-perf";
 import { Leva } from "leva";
-import Sketch from "./components/Sketch/Sketch";
+import Sketch from "./Sketch/Sketch";
 import { NoToneMapping } from "three";
 export default function ThreeContainer() {
     const demand = useInteractStore((state) => state.demand);

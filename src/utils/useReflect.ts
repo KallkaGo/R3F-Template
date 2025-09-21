@@ -1,13 +1,13 @@
 import { useFBO } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
-import { Matrix4, Mesh, NearestFilter, PerspectiveCamera, Plane, Quaternion, UnsignedByteType, Vector3, Vector4 } from "three";
+import { Matrix4, Mesh, Object3D, PerspectiveCamera, Plane, Quaternion, UnsignedByteType, Vector3, Vector4 } from "three";
 import { useShallow } from "zustand/react/shallow";
 import { PackedMipMapGenerator } from "./csmMipmap/PackedMipMapGenerator";
 
 interface MeshReflectorMaterialConfig {
   resolution: number;
-  ignoreObjects: THREE.Object3D[];
+  ignoreObjects: Object3D[];
 }
 
 
